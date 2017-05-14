@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<ul id="slide-out" class="side-nav fixed">
+    <li>
+        <div class="userView">
+            <img class="responsive-img img-logo center-block" src="images/gameloft-logo.png">
+            <h5 class="center-align">Ticket support Tool</h5>
+        </div>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Menu</a></li>
+    <li><a class="waves-effect" href="#!"> <i class="material-icons">add</i> New ticket</a></li>
+    <li><a class="waves-effect" href="#!"> <i class="material-icons">toc</i> View tickets</a></li>
+</ul>
+
+
+<nav class="top-nav">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
+            <a class="page-title">Open a new ticket</a>
+        </div>
+    </div>
+</nav>
+
+<div class="main container">
+    <div class="row">
+        <div class="col s12 card-panel">
+            <h4 class="center-align">Please fill the form</h4>
+            <form action="" enctype="multipart/form-data" method="post" class="">
+                <div class="row">
+                    <div class="input-field col l6">
+                        <input placeholder="Insert your full name" id="full_name" type="text" class="validate">
+                        <label for="full_name">Full Name</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input id="mail" placeholder="Insert your mail" type="email" class="validate">
+                        <label for="mail">Mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l6">
+                        <input type="tel" id="telephone" class="validate" placeholder="Insert your contact number">
+                        <label for="telephone">Contact number</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <select name="country" id="country">
+                            <option value="Mexico">Mexico</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Peru">Peru</option>
+                        </select>
+                        <label for="country">Country</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l6">
+                        <select name="service" id="service">
+                            <option value="1">SMS</option>
+                            <option value="2">Cobro</option>
+                            <option value="3">ASP</option>
+                            <option value="4">AYCE - APP</option>
+                            <option value="5">Notificaciones SMT</option>
+                            <option value="6">Altas y bajas</option>
+                            <option value="7">Problemas contenido</option>
+                            <option value="8">Reportes</option>
+                        </select>
+                        <label for="service">Affected service</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <select name="impact" id="impact">
+                            <option value="1">Bajo</option>
+                            <option value="2">Medio</option>
+                            <option value="3">Alto</option>
+                        </select>
+                        <label for="impact">Nivel de impacto</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l6">
+                        <input type="text" class="datepicker" placeholder="Fecha de la falla" name="date" id="date">
+                        <label for="date">Fecha de la falla</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>Archivos de evidencia</span>
+                                <input id="files" name="files" type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input id="files_input" name="files_input" class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <textarea id="description" class="materialize-textarea"></textarea>
+                            <label for="description">Descripcion del problema</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field chips col l12"></div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+    </div>
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

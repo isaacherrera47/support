@@ -1,0 +1,39 @@
+header, .main, footer, nav {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, .main, footer, nav {
+        padding-left: 0;
+    }
+}
+
+.top-nav {
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 992px) {
+    nav .nav-wrapper a.page-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    nav .nav-wrapper {
+        text-align: center;
+    }
+
+    .nav-wrapper i {
+        line-height: 122px!important;
+        font-size: 3rem!important;
+    }
+}
+
+.card-panel {
+    padding: 50px 50px!important;
+}
